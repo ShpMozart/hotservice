@@ -60,7 +60,7 @@ while True:
 
     print(f"Checking for training... Current records: {current_db_count}, Last trained at: {last_trained_count}")
 
-    if current_db_count >= last_trained_count + 50:
+    if current_db_count >= last_trained_count + 5000:
         print(f"Threshold reached! Starting training with {current_db_count} records...")
 
         all_data = fetch_all_data_from_db(db_engine)
